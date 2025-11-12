@@ -1,0 +1,236 @@
+.hero {
+  background-image: url("/src/images/WhatsApp\ Image\ 2025-11-10\ at\ 12.42.15_7d52f6e4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* dark transparent layer */
+  color: white;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.btn {
+  background-color: #ffcc70;
+  color: #333;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffae42;
+  transform: scale(1.05);
+}
+.btn-secondary {
+  background-color: #fbb03b;
+  color: white;
+}
+.content {
+  padding: 30px;
+  text-align: center;
+}
+
+/* 🧸 PAGE CONTENT */
+.page {
+  padding-top: 100px; /* prevents overlap with navbar */
+  text-align: center;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px auto;
+  width: 85%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+
+/* 🖼️ SINGLE IMAGE STYLE (used in Home, About, Celebration) */
+.hero-img {
+  width: 70%;
+  max-width: 600px;
+  border-radius: 25px;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 174, 66, 0.6);
+}
+
+/* 🖼️ GALLERY GRID */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.gallery-container img {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid #ffcc70;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(255, 200, 100, 0.6);
+}
+
+/* 🎆 PAGE TITLES */
+.page h2 {
+  font-size: 2rem;
+  color: #d35400;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.page p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🌐 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .page {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .gallery-container img {
+    width: 90%;
+    height: auto;
+  }
+}
+.navbar {
+  position: fixed;              /* stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90deg, #ff6f61, #ffcc70);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #ff6f61, #ffcc70);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  height: 70px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+.page-content {
+  padding-top: 80px; /* adds space below fixed navbar */
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #ffcc70, #ff6f61);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  z-index: 1001; /* higher than navbar */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}

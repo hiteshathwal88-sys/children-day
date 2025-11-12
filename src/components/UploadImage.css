@@ -1,0 +1,32 @@
+.upload {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 40px auto;
+  width: 80%;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.file-input {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffcc70;
+  background-color: #fff3e0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.uploaded-img {
+  margin-top: 20px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.uploaded-img:hover {
+  transform: scale(1.05);
+}
